@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>proyecto final3</title>
+	<link href="css/estilo beth.css" type="text/css" rel="stylesheet">
+	<script language="javascript">
+	function ver_imagen()
+{
+    if(!document.images)
+    return 
+    document.images.img.src=
+    document.imagenes.imagen.options[document.imagenes.imagen.selectedIndex].value;
+        
+}
+        
+function ver_hora()
+        {
+            var miHora = new Date();
+            var horas = miHora.getHours().toString();
+            var minutos = miHora.getMinutes().toString();
+            if (minutos.length == 1) minutos = "0" + minutos;
+            var segundos = miHora.getSeconds().toString();
+            if (segundos.length == 1) segundos = "0" + segundos;
+            
+            document.forms[1].mireloj.value = horas + " : " + minutos + " : " + segundos;
+        }
+    </script>
+</head>
+	</br>
+<body>
+	
+	<div class="titulo" align="center"><h1>BETH</h1></div>
+	
+	<div class="menuprincipal">
+	<nav><div class="nav-movil">
+        <a id="nav-boton" href="#!">
+            <span></span>
+            </a>
+        </div>
+		
+    <li><a href="https://www.adultswim.com/videos/rick-and-morty">INICIO</a></li>
+    <li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index2.html">MORTY</a></li>
+    <li><a href="#">BETH</a></li>
+    <li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index4.html">SUMMER</a></li>
+	<li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index5.html">JERRY</a></ul></li>
+	</nav> 
+	</div>
+	</br>
+<div><p><b>Beth Smith (nombre de soltera Beth Sánchez) Es la hija de Rick pero técnicamente es la hija de un Rick muerto en un accidente, a lo que el Rick y Morty originarios de la Dimensión C-137 ocuparon sus lugares. Es la esposa de Jerry y la madre de Summer y de Morty (quién murió en el mismo accidente que Rick).
+
+Su vida ocurrida antes del Píloto de la serie es poco conocida, se sabe que fue abandona de pequeña por su padre por razones desconocidas. Anhelaba ser cirujana cardíaca pero a los 17 años de edad fue a una fiesta con Jerry y quedó embarazada de Summer, pero aún así logro ir a la universidad y graduarse como cirujana de caballos, aunque ella ha admitido que contemplaba la posibilidad de abortar a Summer.</b></p></div>
+	</br>
+<div class="galeria">
+    <form name="imagenes">
+        <select name="imagen" size="1" onChange="ver_imagen()">
+        <option>ELIGE UNA IMAGEN</option>
+           <option value="imagenes/beth.jpg">1</option>
+            <option value="imagenes/beth y rick.jpg">2</option>
+            <option value="imagenes/beth clon.jpg">3</option>
+        </select>
+    </form>
+    <img src="imagenes/beth.jpg" name="img" width="600px" height="450" border="3">
+    </div>
+
+<div>
+<form>
+    <p align="center">
+     <input type="text" size="10" name="mireloj">
+    </p>
+    </form>
+    <script>
+    var r= setInterval ("ver_hora()",500);
+    </script>
+</div>
+
+<div align="center">
+	</br>	
+
+<div class="banner"><a href="https://www.adultswim.com/videos/rick-and-morty"><img src="imagenes/banner 3.png" width="960" height="320"></img></a></div>	
+
+</div>
+</body>
+</html>

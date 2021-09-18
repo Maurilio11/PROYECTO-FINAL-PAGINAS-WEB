@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>proyecto final</title>
+	<link href="css/estilo proyecto final.css" type="text/css" rel="stylesheet">
+	<script language="javascript">
+	function ver_imagen()
+{
+    if(!document.images)
+    return 
+    document.images.img.src=
+    document.imagenes.imagen.options[document.imagenes.imagen.selectedIndex].value;
+        
+}
+        
+function ver_hora()
+        {
+            var miHora = new Date();
+            var horas = miHora.getHours().toString();
+            var minutos = miHora.getMinutes().toString();
+            if (minutos.length == 1) minutos = "0" + minutos;
+            var segundos = miHora.getSeconds().toString();
+            if (segundos.length == 1) segundos = "0" + segundos;
+            
+            document.forms[1].mireloj.value = horas + " : " + minutos + " : " + segundos;
+        }
+    </script>
+	</script>
+</head>
+	</br>
+<body>
+	
+	<div class="titulo" align="center"><h1>RICK Y MORTY</h1></div>
+		
+	<div class="menuprincipal">
+	<nav><div class="nav-movil">
+        <a id="nav-boton" href="#!">
+            <span></span>
+            </a>
+        </div>
+		
+    <li><a href="https://www.adultswim.com/videos/rick-and-morty">INICIO</a></li>
+    <li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index2.html">MORTY</a></li>
+    <li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index3.html">BETH</a></li>
+    <li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index4.html">SUMMER</a></li>
+	<li><a href="file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PROYECTO%20FINAL%20DE%20PAGINAS%20WEB/index5.html">JERRY</a></ul></li>
+	</nav> 
+	</div>
+	</br>
+<div>
+<p><b>Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, la serie también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
+</br>
+La serie se originó por un cortometraje rudimentario animado por Roiland para el festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales protagonistas de Back to the Future. Cuando la cadena NBC despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de la serie que había creado, Community, él y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.</b></p>	
+</div>
+
+<div class="galeria">
+    <form name="imagenes">
+        <select name="imagen" size="1" onChange="ver_imagen()">
+        <option>ELIGE UNA IMAGEN</option>
+           <option value="imagenes/rick y morty.jpg">1</option>
+            <option value="imagenes/morty cool.jpg">2</option>
+            <option value="imagenes/rick cool.jpg">3</option>
+        </select>
+    </form>
+    <img src="imagenes/rick y morty.jpg" name="img" width="600px" height="450" border="3">
+    </div>
+
+<div>
+<form>
+    <p align="center">
+     <input type="text" size="10" name="mireloj">
+    </p>
+    </form>
+    <script>
+    var r= setInterval ("ver_hora()",500);
+    </script>
+</div>
+</br>
+
+<div class="video1" align="center"><tr>
+                <td align="center">
+                    <div class="video-responsive" align="center">
+                    <div class="video-responsive" align="center">
+                        <div align="center"><iframe src="video/WhatsApp Video 2021-09-17 at 6.07.34 PM.mp4"></iframe></div>
+                        </div>
+                    </div>
+                </td>
+            </tr></div>
+
+</br>
+
+<div class="banner"><a href="https://www.adultswim.com/videos/rick-and-morty"><img src="imagenes/banner r y m.png" width="960" height="320"></img></a></div>
+
+</body>
+</html>

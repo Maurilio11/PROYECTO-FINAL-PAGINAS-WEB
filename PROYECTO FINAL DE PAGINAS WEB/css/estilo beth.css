@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #F31258;
+}
+
+.menuprincipal{
+	text-align: center;
+}
+
+.titulo{
+	color: #FFFFFF;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav li{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #000000; 
+    border: 1px solid #fff;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative
+}
+
+nav li:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+nav li>ul{
+    display: none;
+}
+
+nav li:hover>ul{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.galeria{
+    text-align: center;
+}
+
+.banner{
+	text-align: center;
+}
+
+body{
+background-image: url("../imagenes/fondo galaxia.jpg");
+}
+
+p{
+	color: #FFFFFF;
+}
+
+
