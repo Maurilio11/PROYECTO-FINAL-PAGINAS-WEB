@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+nav li{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #000;
+    position: relative
+}
+
+nav li:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+nav li>ul{
+    display: none;
+}
+
+nav li:hover>ul{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+h1{
+    text-align: center;
+    color: #FFFFFF
+}
+
+
+.menuprincipal{
+    text-align: center;
+}
+
+
+body{
+    background-image: url("file:///C:/Users/UANE/Documents/MAURILIO%20TAREAS/PAGINA%20PRINCIPAL%20Y%20PAGINA%20SECUNDARIA/IMAGENES/japon%205.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    text-align: center;
+    color: #FFFFFF
+}
+
+
+.banner{
+    text-align: center;
+    padding-right: 350px;
+}
+
+.banner2{
+    text-align: center;
+    padding-left: 350px;
+}
+
+.banner8{
+    text-align: center;
+}
+
+
+
